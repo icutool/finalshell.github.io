@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO优化元标签 -->
+    <title>FinalShell激活码计算器 - 轻松获取专业版和高级版激活码</title>
+    <meta name="description" content="FinalShell激活码计算器，支持所有版本的FinalShell激活码生成，包括3.9.6以下旧版、3.9.6以上新版和4.5版本的高级版与专业版激活。">
+    <meta name="keywords" content="FinalShell,激活码,计算器,SSH客户端,服务器管理,网络工具,高级版,专业版">
+    <meta name="author" content="FinalShell工具站">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://您的网站域名/finalshell-calculator.html">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .feature-list li {
+            margin-bottom: 0.5rem;
+        }
+        .collapsible {
+            transition: max-height 0.3s ease-out;
+            overflow: hidden;
+        }
+        .copy-btn:hover {
+            background-color: #4299e1;
+        }
+        .copy-btn:active {
+            background-color: #3182ce;
+        }
+        .friend-link:hover {
+            text-decoration: underline;
+            color: #3182ce;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 min-h-screen py-8">
+    <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
+            <!-- 标题区域 -->
+            <div class="bg-gradient-to-r from-blue-600 to-blue-800 p-6 text-white">
+                <h1 class="text-3xl font-bold mb-2">FinalShell激活码计算器</h1>
+                <p class="opacity-90">轻松计算不同版本的FinalShell激活码</p>
+                <div class="mt-4 flex flex-wrap gap-3">
+                    <a href="https://ixietao.lanzout.com/iXx5U2w3trcb" target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded flex items-center transition-colors">
+                        <i class="fas fa-download mr-2"></i>4.5.12版本下载
+                    </a>
+                </div>
+            </div>
+
+            <div class="p-6 md:p-8">
+                <!-- 计算区域 -->
+                <div class="mb-8">
+                    <h2 class="text-xl font-semibold mb-4 text-gray-800"><i class="fas fa-calculator mr-2"></i>激活码计算</h2>
+                    <div class="mb-4">
+                        <label for="machineCode" class="block mb-2 font-medium text-gray-700">输入机器码:</label>
+                        <div class="flex">
+                            <input type="text" id="machineCode" placeholder="请输入您的机器码" class="flex-1 border border-gray-300 p-3 rounded-l focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                            <button id="calculateButton" class="bg-blue-600 text-white px-6 py-3 rounded-r hover:bg-blue-700 transition-colors flex items-center">
+                                <i class="fas fa-cog mr-2"></i>计算
+                            </button>
+                        </div>
+                    </div>
+                    <div id="result" class="mt-4 space-y-4"></div>
+                </div>
+
+                <!-- 版本对比 -->
+                <div class="mb-6">
+                    <h2 class="text-xl font-semibold mb-4 text-gray-800 flex items-center">
+                        <i class="fas fa-list-alt mr-2"></i>版本功能对比
+                        <button id="toggleFeatures" class="ml-auto text-sm bg-gray-200 hover:bg-gray-300 px-3 py-1 rounded transition-colors">
+                            <span id="toggleText">展开详情</span> <i class="fas fa-chevron-down" id="toggleIcon"></i>
+                        </button>
+                    </h2>
+                    <div id="featureDetails" class="collapsible max-h-0">
+                        <div class="grid md:grid-cols-2 gap-6 mt-4">
+                            <!-- 高级版功能 -->
+                            <div class="bg-blue-50 p-4 rounded-lg">
+                                <h3 class="text-lg font-semibold mb-3 text-blue-700"><i class="fas fa-star mr-2"></i>高级版功能</h3>
+                                <ul class="list-disc pl-5 text-gray-700 feature-list">
+                                    <li>网络监控可选择接口,同时监控多个网络接口速度</li>
+                                    <li>打包传输,自动压缩解压,适合传输大量文件,文件夹和文本文件</li>
+                                    <li>高级网络监控,监控每个进程监听的端口,以及网络连接状态</li>
+                                    <li>高级进程管理,详细显示进程信息</li>
+                                    <li>无限制的终端命令历史,路径历史,可快速输入命令,切换路径</li>
+                                </ul>
+                            </div>
+                            <!-- 专业版功能 -->
+                            <div class="bg-indigo-50 p-4 rounded-lg">
+                                <h3 class="text-lg font-semibold mb-3 text-indigo-700"><i class="fas fa-crown mr-2"></i>专业版功能</h3>
+                                <ul class="list-disc pl-5 text-gray-700 feature-list">
+                                    <li>包含所有高级版功能</li>
+                                    <li>查看系统信息</li>
+                                    <li>设置本机图片为终端背景</li>
+                                    <li>历史命令左右键选择字段输入功能(命令输入框)</li>
+                                    <li>快速输入路径功能,可在窗口显示并选择系统的目录和文件(终端命令输入框)</li>
+                                    <li>快速输入命令名称功能(命令输入框)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 使用教程 -->
+                <div class="mb-8">
+                    <h2 class="text-xl font-semibold mb-4 text-gray-800 flex items-center">
+                        <i class="fas fa-book mr-2"></i>使用教程
+                        <button id="toggleTutorial" class="ml-auto text-sm bg-gray-200 hover:bg-gray-300 px-3 py-1 rounded transition-colors">
+                            <span id="toggleTutorialText">展开详情</span> <i class="fas fa-chevron-down" id="toggleTutorialIcon"></i>
+                        </button>
+                    </h2>
+                    <div id="tutorialDetails" class="collapsible max-h-0">
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <ol class="list-decimal pl-5 space-y-2 text-gray-700">
+                                <li>下载并安装FinalShell软件</li>
+                                <li>打开FinalShell，点击菜单栏中的「帮助」-「注册」</li>
+                                <li>在弹出的注册窗口中，找到「机器码」并复制</li>
+                                <li>将机器码粘贴到本页面的输入框中，点击「计算」按钮</li>
+                                <li>根据您的FinalShell版本，选择对应版本的激活码</li>
+                                <li>将激活码复制到FinalShell的注册窗口中，点击「确定」完成激活</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 页脚 -->
+                <div class="mt-8 pt-4 border-t border-gray-200 text-center">
+                    <p class="text-gray-600 text-sm mb-4">本工具仅用于学习和研究目的，请支持正版软件。</p>
+                    
+                    <!-- 友情链接 -->
+                    <div class="mt-4">
+                        <h3 class="text-lg font-semibold mb-3 text-gray-700"><i class="fas fa-link mr-2"></i>友情链接</h3>
+                        <div class="flex flex-wrap justify-center gap-4">
+                            <a href="https://icutool.cn/" target="_blank" class="friend-link text-blue-600 hover:text-blue-800 transition-colors">程序员在线工具网</a>
+                        </div>
+                    </div>
+                    
+                    <!-- 版权信息 -->
+                    <p class="text-gray-500 text-xs mt-4">&copy; 2025 FinalShell激活码计算器 | <a href="#" class="text-blue-500 hover:underline">隐私政策</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 引入哈希库
+        function md5(str) {
+            const encoder = new TextEncoder();
+            const data = encoder.encode(str);
+            return CryptoJS.MD5(CryptoJS.enc.Utf8.parse(str)).toString();
+        }
+
+        function keccak384(str) {
+            const encoder = new TextEncoder();
+            const data = encoder.encode(str);
+            return CryptoJS.SHA3(str, { outputLength: 384 }).toString();
+        }
+
+        // 复制功能
+        function createCopyButton(text) {
+            const btn = document.createElement('button');
+            btn.className = 'copy-btn ml-2 bg-blue-500 text-white text-xs px-2 py-1 rounded transition-colors';
+            btn.innerHTML = '<i class="fas fa-copy mr-1"></i>复制';
+            btn.onclick = function() {
+                navigator.clipboard.writeText(text).then(() => {
+                    btn.innerHTML = '<i class="fas fa-check mr-1"></i>已复制';
+                    setTimeout(() => {
+                        btn.innerHTML = '<i class="fas fa-copy mr-1"></i>复制';
+                    }, 2000);
+                });
+            };
+            return btn;
+        }
+
+        // 计算按钮事件
+        document.getElementById('calculateButton').addEventListener('click', function () {
+            const code = document.getElementById('machineCode').value.trim();
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = '';
+            
+            if (!code) {
+                resultDiv.innerHTML = '<div class="bg-red-100 border-l-4 border-red-500 text-red-700 p-4"><i class="fas fa-exclamation-triangle mr-2"></i>请输入机器码</div>';
+                return;
+            }
+
+            // 创建结果卡片
+            const createVersionCard = (title, bgColor, borderColor, textColor, results) => {
+                const card = document.createElement('div');
+                card.className = `${bgColor} ${borderColor} p-4 rounded-lg`;
+                
+                const titleEl = document.createElement('h3');
+                titleEl.className = `${textColor} font-semibold mb-3`;
+                titleEl.innerHTML = title;
+                card.appendChild(titleEl);
+
+                const resultsList = document.createElement('div');
+                resultsList.className = 'space-y-2';
+                
+                results.forEach(item => {
+                    const resultItem = document.createElement('div');
+                    resultItem.className = 'flex items-center';
+                    
+                    const label = document.createElement('span');
+                    label.className = 'font-medium';
+                    label.textContent = `${item.label}: `;
+                    
+                    const code = document.createElement('span');
+                    code.className = 'font-mono bg-white px-2 py-1 rounded ml-2 border';
+                    code.textContent = item.code;
+                    
+                    resultItem.appendChild(label);
+                    resultItem.appendChild(code);
+                    resultItem.appendChild(createCopyButton(item.code));
+                    
+                    resultsList.appendChild(resultItem);
+                });
+                
+                card.appendChild(resultsList);
+                return card;
+            };
+
+            // 旧版结果
+            const oldVersionResults = [
+                { label: '高级版', code: md5(`61305${code}8552`).slice(8, 24) },
+                { label: '专业版', code: md5(`2356${code}13593`).slice(8, 24) }
+            ];
+            resultDiv.appendChild(createVersionCard(
+                '<i class="fas fa-history mr-2"></i>版本号 < 3.9.6 (旧版)',
+                'bg-amber-50',
+                'border-l-4 border-amber-500',
+                'text-amber-800',
+                oldVersionResults
+            ));
+
+            // 新版结果
+            const newVersionResults = [
+                { label: '高级版', code: keccak384(`${code}hSf(78cvVlS5E)`).slice(12, 28) },
+                { label: '专业版', code: keccak384(`${code}FF3Go(*Xvbb5s2)`).slice(12, 28) }
+            ];
+            resultDiv.appendChild(createVersionCard(
+                '<i class="fas fa-code-branch mr-2"></i>版本号 >= 3.9.6 (新版)',
+                'bg-green-50',
+                'border-l-4 border-green-500',
+                'text-green-800',
+                newVersionResults
+            ));
+
+            // 4.5版本结果
+            const v45VersionResults = [
+                { label: '高级版', code: keccak384(`${code}wcegS3gzA$`).slice(12, 28) },
+                { label: '专业版', code: keccak384(`${code}b(xxkHn%z);x`).slice(12, 28) }
+            ];
+            resultDiv.appendChild(createVersionCard(
+                '<i class="fas fa-tag mr-2"></i>版本号 4.5',
+                'bg-blue-50',
+                'border-l-4 border-blue-500',
+                'text-blue-800',
+                v45VersionResults
+            ));
+        });
+
+        // 功能对比展开/收起
+        document.getElementById('toggleFeatures').addEventListener('click', function() {
+            const details = document.getElementById('featureDetails');
+            const toggleText = document.getElementById('toggleText');
+            const toggleIcon = document.getElementById('toggleIcon');
+            
+            if (details.classList.contains('max-h-0')) {
+                details.classList.remove('max-h-0');
+                details.classList.add('max-h-[1000px]');
+                toggleText.textContent = '收起详情';
+                toggleIcon.classList.remove('fa-chevron-down');
+                toggleIcon.classList.add('fa-chevron-up');
+            } else {
+                details.classList.remove('max-h-[1000px]');
+                details.classList.add('max-h-0');
+                toggleText.textContent = '展开详情';
+                toggleIcon.classList.remove('fa-chevron-up');
+                toggleIcon.classList.add('fa-chevron-down');
+            }
+        });
+    // 使用教程展开/收起
+    document.getElementById('toggleTutorial').addEventListener('click', function() {
+        const details = document.getElementById('tutorialDetails');
+        const toggleText = document.getElementById('toggleTutorialText');
+        const toggleIcon = document.getElementById('toggleTutorialIcon');
+        
+        if (details.classList.contains('max-h-0')) {
+            details.classList.remove('max-h-0');
+            details.classList.add('max-h-[1000px]');
+            toggleText.textContent = '收起详情';
+            toggleIcon.classList.remove('fa-chevron-down');
+            toggleIcon.classList.add('fa-chevron-up');
+        } else {
+            details.classList.remove('max-h-[1000px]');
+            details.classList.add('max-h-0');
+            toggleText.textContent = '展开详情';
+            toggleIcon.classList.remove('fa-chevron-up');
+            toggleIcon.classList.add('fa-chevron-down');
+        }
+    });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+</body>
+
+</html>
